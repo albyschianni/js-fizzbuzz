@@ -1,11 +1,38 @@
 
 body {
-    background-color: black;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	animation: gradient 15s ease infinite;
+   
+    
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 h1 {
     color: white;
     font-size: 100px;
     text-align: center;
+}
+.container-title {
+    width: 700px;
+    margin: 75px auto;
+    border: 1px solid white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 .box {
     background-color: aquamarine;
